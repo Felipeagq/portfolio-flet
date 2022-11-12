@@ -15,7 +15,7 @@ class TextComponent(UserControl):
                 Container(
             content=Text(
             "My Name is",
-            size=17,
+            size=27,
             weight="w500",
             color=colors.BLACK87
         )
@@ -23,7 +23,7 @@ class TextComponent(UserControl):
         Container(
             content=Text(
             "Felipe Gonzalez",
-            size=25,
+            size=35,
             weight="w700",
             color=colors.BLACK87
         )
