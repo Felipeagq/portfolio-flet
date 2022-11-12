@@ -13,11 +13,6 @@ class IconComponents(UserControl):
         super().__init__()
         self.page = page
     
-    def goto_linkedin(self):
-        return requests.head("https://www.linkedin.com/in/felipeagq/",allow_redirects=True)
-    
-    
-    
     def build(self):
         return Row(
             [

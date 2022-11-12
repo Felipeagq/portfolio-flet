@@ -19,7 +19,7 @@ class ResumeComponent(UserControl):
             color=colors.BLACK87,
             text_align="center",
             no_wrap=False,
-        ),width=500
+        ),width=1000
         )
             ],
             alignment="center",

@@ -7,9 +7,7 @@ from components.icons_componentes import IconComponents
 
 
 def main(page: Page):
-    # Configuraciones
-    print(page.width,)
-    
+    # Configuraciones    
     page.title = "flet Studying"
     page.padding = 50
     page.bgcolor = colors.BROWN
@@ -26,7 +24,7 @@ def main(page: Page):
                     
                 ],
                 horizontal_alignment="center",
-                spacing=35,
+                spacing=55,
                 alignment="center"
             ),
             width=page.width

@@ -19,14 +19,14 @@ class PhotoStack(UserControl):
             Container(
             content=Image(
                     src=self.source,
-                    width=100,
-                    height=100,
+                    width=500,
+                    height=500,
                     border_radius=border_radius.all(100),
                     fit="fitWidth"
                 ),
             shape=BoxShape.CIRCLE,
-            width=200,
-            height=200
+            width=500,
+            height=500
         ),
             Container(
                 content=Text("Hello!",color="white",size=25,weight="w900"),
@@ -34,6 +34,6 @@ class PhotoStack(UserControl):
 
             )
         ],
-        width=200,
-        height=200
+        width=300,
+        height=300
 )
