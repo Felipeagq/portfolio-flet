@@ -3,7 +3,7 @@ from flet import Page, colors, Column, Text, Container
 from components.photo_stack import PhotoStack
 from components.text_component import TextComponent
 from components.resume_component import ResumeComponent
-from components.icons_componentes import IconComponents
+from components.icons_componentes import IconComponents, IconComponentsTwo
 
 
 def main(page: Page):
@@ -20,7 +20,9 @@ def main(page: Page):
                     PhotoStack("/assets/felipe.jpeg"),
                     TextComponent(),
                     ResumeComponent(),
-                    IconComponents(page)
+                    # IconComponents(page),
+                    IconComponentsTwo(page)
+                    
                     
                 ],
                 horizontal_alignment="center",
