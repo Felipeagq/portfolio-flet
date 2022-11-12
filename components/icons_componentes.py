@@ -56,7 +56,7 @@ class IconComponentsTwo(UserControl):
                         ),
                     ],
                         spacing=50),
-                    padding=padding.only(top=200),
+                    padding=padding.only(top=150),
                 ),
             ],
             alignment="center",

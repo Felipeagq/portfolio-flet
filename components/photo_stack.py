@@ -5,9 +5,11 @@ from flet import (
     border_radius,
     Text,
     Image,
-    alignment
+    alignment,
+    animation,
 )
 from flet.types import BoxShape
+
 
 class PhotoStack(UserControl):
     def __init__(self,source):
@@ -26,11 +28,13 @@ class PhotoStack(UserControl):
                 ),
             shape=BoxShape.CIRCLE,
             width=500,
-            height=500
+            height=500,
+            animate_scale=animation.Animation(800,"bounceOut"),
         ),
             Container(
                 content=Text("Hello!",color="white",size=25,weight="w900"),
                 alignment=alignment.bottom_left,
+                animate_scale=animation.Animation(800,"bounceOut")
 
             )
         ],

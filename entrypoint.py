@@ -8,9 +8,10 @@ from components.icons_componentes import IconComponents, IconComponentsTwo
 
 def main(page: Page):
     # Configuraciones    
-    page.title = "flet Studying"
+    page.title = "Felipe Portfolio"
     page.padding = 50
     page.bgcolor = colors.BROWN
+    page.scroll = "hidden"
 
     # Componentes
     page.add(
@@ -21,18 +22,16 @@ def main(page: Page):
                     TextComponent(),
                     ResumeComponent(),
                     # IconComponents(page),
-                    IconComponentsTwo(page)
-                    
-                    
+                    IconComponentsTwo(page),
                 ],
                 horizontal_alignment="center",
                 spacing=55,
-                alignment="center"
+                alignment="center",
+                
             ),
             width=page.width
             )
         ],
-        
     )
     )
     page.update()
