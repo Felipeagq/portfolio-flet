@@ -7,6 +7,7 @@ from flet import (
     Image,
     alignment,
     animation,
+    margin
 )
 from flet.types import BoxShape
 from utils.utils import ScaleUp
@@ -24,7 +25,7 @@ class PhotoStack(UserControl):
                     src=self.source,
                     width=500,
                     height=500,
-                    border_radius=border_radius.all(100),
+                    border_radius=border_radius.all(1000),
                     fit="fitWidth"
                 ),
             shape=BoxShape.CIRCLE,
@@ -33,10 +34,11 @@ class PhotoStack(UserControl):
             animate_scale=animation.Animation(800,"bounceOut"),
         ),
             Container(
-                content=Text("Hello!",color="white",size=25,weight="w900"),
+                content=Text("Hello!",color="white",size=30,weight="w900"),
                 alignment=alignment.bottom_left,
                 animate_scale=animation.Animation(800,"bounceOut"),
-                on_hover= lambda x: ScaleUp(x,1.1)
+                on_hover= lambda x: ScaleUp(x,1.5),
+                margin=margin.only(bottom=25,left=25)
 
             )
         ],
