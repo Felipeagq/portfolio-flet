@@ -22,7 +22,7 @@ class TextComponent(UserControl):
         ),
         Container(
             content=Text(
-            "Felipe Gonzalez",
+            "Felipe Andres Gonzalez Quintero",
             size=35,
             weight="w700",
             color=colors.BLACK87

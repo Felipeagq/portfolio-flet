@@ -4,25 +4,28 @@ from components.photo_stack import PhotoStack
 from components.text_component import TextComponent
 from components.resume_component import ResumeComponent
 from components.icons_componentes import IconComponents, IconComponentsTwo
+from components.grid_component import GridComponent
 
 
 def main(page: Page):
     # Configuraciones    
     page.title = "Felipe Portfolio"
     page.padding = 50
-    page.bgcolor = colors.BROWN
+    page.bgcolor = colors.BROWN_400
     page.scroll = "hidden"
 
     # Componentes
     page.add(
         Column([
             Container(content=Column(
+                
                 controls=[
                     PhotoStack("/assets/felipe.jpeg"),
                     TextComponent(),
                     ResumeComponent(),
                     # IconComponents(page),
                     IconComponentsTwo(page),
+                    GridComponent()
                 ],
                 horizontal_alignment="center",
                 spacing=55,

@@ -61,7 +61,7 @@ class IconComponentsTwo(UserControl):
                         ),
                     ],
                     spacing=50),
-                    padding=padding.only(top=100),
+                    padding=padding.only(top=130),
                     # on_hover= lambda x : ScaleUp(x),
                     # animate= animation.Animation(800,"bounceOut")
                 ),
