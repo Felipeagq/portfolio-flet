@@ -1,10 +1,15 @@
 import flet
+from flet import (
+    icons,
+)
 from flet import Page, colors, Column, Text, Container
 from components.photo_stack import PhotoStack
 from components.text_component import TextComponent
 from components.resume_component import ResumeComponent
-from components.icons_componentes import IconComponents, IconComponentsTwo
+from components.icons_componentes import  IconComponentsTwo
 from components.grid_component import GridComponent
+from components.hability_component import HabilityComponent
+from components.tecnologies_component import TecnologiesComponent
 
 
 def main(page: Page):
@@ -25,7 +30,36 @@ def main(page: Page):
                     ResumeComponent(),
                     # IconComponents(page),
                     IconComponentsTwo(page),
-                    GridComponent()
+                    GridComponent([
+                        HabilityComponent(
+                            icons.MANAGE_ACCOUNTS,
+                            "Project Manager",
+                            "Todo en la vida tiene un orden, incluso los proyectos"
+                            ),
+                        HabilityComponent(
+                            icons.STORAGE_OUTLINED,
+                            "BackEnd Development",
+                            "Gestion de la logica de negocio de un proyecto y base de datos"
+                            ),
+                        HabilityComponent(
+                            icons.COMPUTER_SHARP,
+                            "DevOps",
+                            "Despliegue de proyectos con tecnologias en la vanguardia"
+                            ),
+                                #--
+                    ]),
+                    GridComponent([
+                        TecnologiesComponent("logo-teal.png"),
+                        TecnologiesComponent("aws.png"),
+                        TecnologiesComponent("flask-bg.png"),
+                        TecnologiesComponent("trello.png"),
+                        TecnologiesComponent("git.png"),
+                        TecnologiesComponent("python.png"),
+                        TecnologiesComponent("flet.png"),
+                        TecnologiesComponent("drf.png"),
+                        TecnologiesComponent("docker.png"),
+                                #--
+                    ])
                 ],
                 horizontal_alignment="center",
                 spacing=55,
@@ -33,6 +67,7 @@ def main(page: Page):
                 
             ),
             width=page.width
+            # width=page.window_width
             )
         ],
     )

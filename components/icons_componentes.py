@@ -59,11 +59,16 @@ class IconComponentsTwo(UserControl):
                             on_hover= lambda x : ScaleUp(x,1.5),
                             animate_scale= animation.Animation(800,"bounceOut")
                         ),
+                        Container(
+                            Image(src="/assets/github.png"),
+                            width=50,
+                            on_click=lambda e: self.page.launch_url("https://github.com/Felipeagq/"),
+                            on_hover= lambda x : ScaleUp(x,1.5),
+                            animate_scale= animation.Animation(800,"bounceOut")
+                        ),
                     ],
                     spacing=50),
                     padding=padding.only(top=130),
-                    # on_hover= lambda x : ScaleUp(x),
-                    # animate= animation.Animation(800,"bounceOut")
                 ),
             ],
             alignment="center",
