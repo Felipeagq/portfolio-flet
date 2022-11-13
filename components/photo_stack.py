@@ -9,6 +9,7 @@ from flet import (
     animation,
 )
 from flet.types import BoxShape
+from utils.utils import ScaleUp
 
 
 class PhotoStack(UserControl):
@@ -34,10 +35,11 @@ class PhotoStack(UserControl):
             Container(
                 content=Text("Hello!",color="white",size=25,weight="w900"),
                 alignment=alignment.bottom_left,
-                animate_scale=animation.Animation(800,"bounceOut")
+                animate_scale=animation.Animation(800,"bounceOut"),
+                on_hover= lambda x: ScaleUp(x,1.1)
 
             )
         ],
-        width=300,
-        height=300
+        width=350,
+        height=350
 )
