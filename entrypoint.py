@@ -10,6 +10,7 @@ from components.icons_componentes import  IconComponentsTwo
 from components.grid_component import GridComponent
 from components.hability_component import HabilityComponent
 from components.tecnologies_component import TecnologiesComponent
+from components.history_component import HistoryComponent
 
 
 def main(page: Page):
@@ -48,6 +49,7 @@ def main(page: Page):
                             ),
                                 #--
                     ]),
+                    GridComponent([HistoryComponent(),HistoryComponent()]),
                     GridComponent([
                         TecnologiesComponent("logo-teal.png"),
                         TecnologiesComponent("aws.png"),
