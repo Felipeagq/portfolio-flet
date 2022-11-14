@@ -3,7 +3,8 @@ from flet import (
     UserControl,
     colors,
     Row,
-    border_radius
+    border_radius,
+    padding
 )
 
 
@@ -23,5 +24,6 @@ class GridComponent(UserControl):
                 alignment="spaceEvenly",
                 ),
             bgcolor=colors.WHITE24,
-            border_radius=border_radius.all(25)
+            border_radius=border_radius.all(25),
+            padding=padding.all(25)
         )
