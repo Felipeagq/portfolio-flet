@@ -35,7 +35,23 @@ class ItemComponent(UserControl):
 
 
 
-class HistoryComponent(UserControl):
+class HistoryComponentEducate(UserControl):
+    
+    def build(self):
+        return Container(
+            Column([
+                ItemComponent(
+                    icons.OFFLINE_BOLT_OUTLINED,
+                    "Ingenieria Mecatronica",
+                    "Universidad Autonoma del caribe UAC"),
+            ]),
+                # on_hover= lambda x : ScaleUp(x,1.3),
+                # animate_scale=animation.Animation(800,"bounceOut"),
+            width=600
+        )
+
+
+class HistoryComponentWork(UserControl):
     
     def build(self):
         return Container(
