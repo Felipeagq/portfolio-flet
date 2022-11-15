@@ -14,14 +14,14 @@ from components.history_component import HistoryComponentEducate, HistoryCompone
 
 
 def main(page: Page):
-    Configuraciones    
+    # Configuraciones    
     page.title = "Felipe Portfolio"
     page.padding = 50
     page.bgcolor = colors.BROWN_400
     page.scroll = "hidden"
 
-    page.add(Text("Hola"))
-    Componentes
+    # page.add(Text("Hola"))
+    # Componentes
     page.add(
         Column([
             Container(content=Column(
@@ -83,6 +83,7 @@ def main(page: Page):
 
 if __name__ == "__main__":
     flet.app(target=main,
+             assets_dir="assets",
             host="0.0.0.0",
             port=5000
             )

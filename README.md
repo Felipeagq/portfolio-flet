@@ -2,5 +2,5 @@
 
 ## Correr el programa
 ```bash
-flet entrypoint.py -d --web --port 5000
+flet entrypoint.py -n -w --port 5000
 ```
