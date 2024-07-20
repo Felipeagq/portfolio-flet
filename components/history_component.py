@@ -1,7 +1,6 @@
 from flet import (
     Column,
     Row,
-    UserControl,
     Text,
     Container,
     ListTile,
@@ -15,7 +14,7 @@ from flet import (
 from utils.utils import ScaleUp
 
 
-class ItemComponent(UserControl):
+class ItemComponent(Column):
 
     def __init__(self, icono, titulo, subtitulo):
         super().__init__()
@@ -38,7 +37,7 @@ class ItemComponent(UserControl):
         )
 
 
-class HistoryComponentEducate(UserControl):
+class HistoryComponentEducate(Column):
 
     def build(self):
         return Container(
@@ -59,7 +58,7 @@ class HistoryComponentEducate(UserControl):
         )
 
 
-class HistoryComponentWork(UserControl):
+class HistoryComponentWork(Column):
 
     def build(self):
         return Container(

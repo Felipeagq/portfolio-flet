@@ -3,11 +3,11 @@ from flet import (
     Row,
     colors,
     Container,
-    UserControl,
-    margin
+    margin,
+    Column
 )
 
-class TextComponent(UserControl):
+class TextComponent(Column):
     
     def build(self):
         return Row(

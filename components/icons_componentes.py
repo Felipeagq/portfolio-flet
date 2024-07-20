@@ -2,14 +2,13 @@ from flet import (
     Row,
     Container,
     Image,
-    UserControl,
     padding,
     animation
 )
 
 from utils.utils import ScaleUp
 
-class IconComponents(UserControl):
+class IconComponents(Container):
     def __init__(self,page):
         super().__init__()
         self.page = page
@@ -34,7 +33,7 @@ class IconComponents(UserControl):
 
 
 
-class IconComponentsTwo(UserControl):
+class IconComponentsTwo(Container):
     def __init__(self,page):
         super().__init__()
         self.page = page

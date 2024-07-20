@@ -2,13 +2,13 @@ from flet import (
     Container,
     Image,
     animation,
-    UserControl,
-    colors
+    colors,
+    Column
 )
 
 from utils.utils import ScaleUp
 
-class TecnologiesComponent(UserControl):
+class TecnologiesComponent(Column):
     def __init__(self,image):
         super().__init__()
         self.image = image 

@@ -1,15 +1,15 @@
 from flet import (
     Container,
-    UserControl,
     colors,
     Row,
     border_radius,
+    Column,
     padding
 )
 
 
 
-class GridComponent(UserControl):
+class GridComponent(Column):
     def __init__(self,component):
         super().__init__()
         self.component = component

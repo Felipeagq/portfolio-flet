@@ -3,7 +3,7 @@ from flet import (
     Column,
     Icon,
     Text,
-    UserControl,
+
     padding,
     margin,
     colors,
@@ -17,7 +17,7 @@ from utils.utils import ScaleUp
 
 
 
-class HabilityComponent(UserControl):
+class HabilityComponent(Column):
     def __init__(self,icono,titulo,texto):
         super().__init__()
         self.icono = icono

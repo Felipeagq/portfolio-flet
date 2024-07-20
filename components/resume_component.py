@@ -3,10 +3,10 @@ from flet import (
     Row,
     colors,
     Container,
-    UserControl,
+    Column
 )
 
-class ResumeComponent(UserControl):
+class ResumeComponent(Column):
     
     def build(self):
         return Row(

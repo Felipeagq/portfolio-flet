@@ -1,5 +1,4 @@
 from flet import (
-    UserControl,
     Stack,
     Container,
     border_radius,
@@ -7,13 +6,14 @@ from flet import (
     Image,
     alignment,
     animation,
-    margin
+    margin,
+    Column
 )
-from flet.types import BoxShape
+from flet import BoxShape
 from utils.utils import ScaleUp
 
 
-class PhotoStack(UserControl):
+class PhotoStack(Column):
     def __init__(self,source):
         super().__init__()
         self.source = source

@@ -27,7 +27,7 @@ def main(page: Page):
             Container(content=Column(
                 
                 controls=[
-                    PhotoStack("/assets/felipe.jpeg"),
+                    PhotoStack("image.png"),
                     TextComponent(),
                     ResumeComponent(),
                     # IconComponents(page),
@@ -84,6 +84,6 @@ def main(page: Page):
 if __name__ == "__main__":
     flet.app(target=main,
              assets_dir="assets",
-            host="0.0.0.0",
+            host="localhost",
             port=5000
             )
