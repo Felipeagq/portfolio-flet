@@ -1,4 +1,5 @@
 from flet import (
+    UserControl,
     Stack,
     Container,
     border_radius,
@@ -34,7 +35,7 @@ class PhotoStack(Column):
             animate_scale=animation.Animation(800,"bounceOut"),
         ),
             Container(
-                content=Text("Hello!",color="white",size=30,weight="w900"),
+                content=Text("Hello!",color="black",size=30,weight="w900"),
                 alignment=alignment.bottom_left,
                 animate_scale=animation.Animation(800,"bounceOut"),
                 on_hover= lambda x: ScaleUp(x,1.5),
